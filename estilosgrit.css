@@ -1,0 +1,6 @@
+#grilla{
+    display: grid;
+    background-color: crimson;
+    height: 500px;
+    grid-template-columns: repeat(3, auto);
+}

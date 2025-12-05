@@ -1,0 +1,173 @@
+h1 {
+            color: red;
+            font-size: 30px;
+            text-align: center;
+            background-color: turquoise;
+            border: 6px solid black;
+            padding: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        p {
+            color: blue;
+            image-orientation: flip;
+            transition: 3s background-color linear;
+        }
+
+        span {
+            font-weight: bold;
+            background-color: violet;
+        }
+        img {
+            border-radius: 50%;
+            align-items: center;
+        }
+        h2
+        {
+            text-decoration: underline;
+            color: green;
+            font-weight: 300;
+        }
+        .negro
+        {
+            background-color: yellowgreen;
+            color: black;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 10px 20px 30px 40px;
+        }
+        #unico{
+            color: black;
+            text-align: center;
+            box-shadow: 10px 10px 10px 10px gray;
+            filter: drop-shadow(16px 16px 20px gray);
+            animation: latido 2s linear infinite;
+        }
+        div{
+            color: brown;
+            background-color: yellow;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        p{
+            color: purple !important;
+            transition: 3s background-color linear;
+            
+        }
+        
+        div ul li{
+            font-size: 20px;
+            color: orange;
+        }
+        section>p{
+            font-size: 18px;
+            color: pink;
+        }
+        /* cuando pasamos el maus ensima del elemento */
+        p:hover{
+            font-size: 20px;
+            background-color: crimson;
+        }
+        /* cuando damos click en el elemento y lo mantienes */
+        p:active{
+            background-color: blue;
+        }
+
+        p:first-child{
+            font-size: 25px;
+            color: red;
+        }
+
+        /*para crear una nueva animacion css*/
+        @keyframes latido {
+            from {     /* estado inicial */
+                color: red;
+                transform: scale(.8);
+            }
+            to { /* estado final */
+                color: blue;
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes latido {
+            0% {     /* estado inicial */
+                background-color: red;
+                transform: scale(.9);
+            }
+            25% { /* estado final */
+                background-color: cyan;
+                transform: scale(1.1);
+            }
+            50% { /* estado final */
+                background-color: blue;
+                transform: scale(1.1);
+            }
+            75% { /* estado final */
+                background-color: chocolate;
+                transform: scale(1);
+            }
+            100% { /* estado final */
+                background-color: green;
+                transform: scale(1.1);
+            }
+        }
+/*para crear una nueva animacion css corazon*/
+        @keyframes latido {
+            0% {     /* estado inicial */
+                color: red;
+                transform: scale(.8);
+            }
+            25% { /* estado final */
+                color: blue;
+                transform: scale(1.1);
+            }
+            50% { /* estado final */
+                color: green;
+                transform: scale(1.1);
+            }
+        }
+        #flex{
+            display: flex;
+            gap: 10px;/* esto solo funciona cuando hay display: flex y display:grid*/
+            flex-wrap: wrap; /* es para que el elemento cuando no caben en la pantalla de izquierda a derecha se valla para abajo*/
+            list-style-type: none;
+            div{
+                min-width: 300px;
+                height: 200px;
+                background-color: skyblue;
+            }
+
+        }
+        #especial{
+            background-color: orange;
+            height: 300px;
+            display: flex;
+            justify-content: center; /* para centrar horizontalmente */
+            align-items: center; /* para centrar verticalmente */
+            justify-content: space-around;
+            div{
+                background-color: black;
+                width: 100px;
+                height: 100px;
+            };
+        }
+
+        #especialll{
+            background-color: orange;
+            height: 300px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column; /* para que los elementos se acomoden en columna y cambia de lugar align-items y justify-content*/
+            flex-direction: row-reverse; /* para que los elementos se acomoden en fila pero de derecha a izquierda*/
+            justify-content: center; /* para centrar horizontalmente */
+            div{
+                background-color: black;
+                width: 100px;
+                height: 100px;
+            };
+        }
+
+        #independiente{
+            align-self: center; /*solo funciona para los hijos*/
+        }
